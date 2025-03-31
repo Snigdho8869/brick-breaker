@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brick Breaker | Neon Edition</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-brick.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='js-brick.js') }}"></script>
+</head>
+<body>
+    <h1>BRICK BREAKER</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="570"></canvas>
+        <div class="score-display">SCORE: <span id="scoreValue">0</span></div>
+        <div class="controls">
+            <div id="leftButton" class="arrow-button" title="Move Left">&larr;</div>
+            <div id="rightButton" class="arrow-button" title="Move Right">&rarr;</div>
+        </div>
+    </div>
+</body>
+</html>
